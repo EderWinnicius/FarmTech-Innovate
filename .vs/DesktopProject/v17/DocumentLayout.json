@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eder-\\source\\repos\\DesktopProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B222C792-96E1-41E0-8A94-2B59AC24E925}|ControlerProject\\ControlerProject.csproj|c:\\users\\eder-\\source\\repos\\desktopproject\\controlerproject\\registerclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B222C792-96E1-41E0-8A94-2B59AC24E925}|ControlerProject\\ControlerProject.csproj|solutionrelative:controlerproject\\registerclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8B0CFD-2DB2-4055-A8D8-BCE2AC8013BF}|DesktopProject\\DesktopProject.csproj|C:\\Users\\eder-\\source\\repos\\DesktopProject\\desktopproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F8B0CFD-2DB2-4055-A8D8-BCE2AC8013BF}|DesktopProject\\DesktopProject.csproj|solutionrelative:desktopproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterClass.cs",
+              "DocumentMoniker": "C:\\Users\\eder-\\source\\repos\\DesktopProject\\ControlerProject\\RegisterClass.cs",
+              "RelativeDocumentMoniker": "ControlerProject\\RegisterClass.cs",
+              "ToolTip": "C:\\Users\\eder-\\source\\repos\\DesktopProject\\ControlerProject\\RegisterClass.cs",
+              "RelativeToolTip": "ControlerProject\\RegisterClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T20:37:33.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\eder-\\source\\repos\\DesktopProject\\DesktopProject\\Form1.cs",
+              "RelativeDocumentMoniker": "DesktopProject\\Form1.cs",
+              "ToolTip": "C:\\Users\\eder-\\source\\repos\\DesktopProject\\DesktopProject\\Form1.cs [Projeto]",
+              "RelativeToolTip": "DesktopProject\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T20:36:16.512Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
