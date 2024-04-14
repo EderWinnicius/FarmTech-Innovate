@@ -6,11 +6,11 @@ namespace ControlerProject
 {
     public class RegisterClass
     {
-        public string? NomeUser { get; set; }
-        public string? ContatoUSer { get; set; }
-        public string? ExtraContatoUser { get; set; }
-        public string? EmailUser { get; set; }
-        public bool SetEmailUser(string Email)
+        public string? NomeRegister { get; set; }
+        public string? ContatoRegister { get; set; }
+        public string? ExtraContatoRegister { get; set; }
+        public string? EmailRegister { get; set; }
+        public bool SetEmailRegister(string Email)
         {
             int ValiderCount = 0;
 
@@ -46,10 +46,20 @@ namespace ControlerProject
     {
         protected string? CpfUser { get; set; }
         protected string? DataNascimento { get; set; }
-        protected int Idade { get; set; }
+        protected int Idade;
 
-        private string? LoginUser { get; set; }
 
+        //REGISTRO DE FUNCIONARIO
+        public string? Cargo { get; set; }
+        public string? DataAdmissional { get; set; }
+
+        protected string? DataFerias;
+
+        //PARA O LOGIN PRECISAMOS DE UM VALIDADOR EM COMUNICAÇÃO COM O BD ONDE NÃO HAJA NENHUM LOGIN IGUAL
+        private string? LoginUser;
+
+        //DEFINIR EM CONJUNTO CRITERIOS DE SENHA
+        private string? PasswordUser;
 
 
 
@@ -96,9 +106,9 @@ namespace ControlerProject
 
             int.TryParse(InDataNascimento.Substring(InDataNascimento.Length - 4), out int AnoNasc);
 
-            int AnoHoje = DateTime.Now.Year;
+            int AnoAtual = DateTime.Now.Year;
 
-            int Idade = AnoHoje - AnoNasc;
+            int Idade = AnoAtual - AnoNasc;
 
             if (Idade < 18)
             {
@@ -109,6 +119,25 @@ namespace ControlerProject
             this.DataNascimento = InDataNascimento;
             return true;
         }
+
+        public bool SetDataAdmissional(string Registro)
+        {
+            int.TryParse(Registro.Substring(Registro.Length - 4), out int AnoAdmitido);
+
+            string AnoFerias = (AnoAdmitido + 1).ToString();
+
+            this.DataAdmissional = Registro;
+            this.DataFerias = Registro.Remove(4, 4) + AnoFerias;
+            return true;
+        }
+
+    }
+
+    public class FornecedorRegister : RegisterClass
+    {
+        protected string? CnpjFornecedor;
+        protected string? EnderecoFornecedor { get; set; }
+        public string? UltimaCompra { get; set; }
 
 
     }
